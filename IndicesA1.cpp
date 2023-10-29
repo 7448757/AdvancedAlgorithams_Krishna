@@ -3,9 +3,8 @@
   
 using namespace std; 
 int main() 
-{ 
-    int totalinputs,targetvalue,consideredvalue[2];
   { 
+    int totalinputs,targetvalue;
    cout<<"Enter total inputs:";
   cin>>totalinputs;
   cout<<"total inputs are :"<<totalinputs<<"\n";
@@ -28,10 +27,12 @@ int main()
   for(int cv=0;cv<=totalinputs-1;cv++)
   {
     for(int cv2=1;cv2<=totalinputs-1;cv2++){
-        if(numbers[cv]+numbers[cv2]==targetvalue)
+        if(numbers[cv]+numbers[cv2]==targetvalue && cv!=cv2)
         {
-            cout<<"Considered indices are :"<<cv<<" "<<cv2;
+            cout<<"Considered indices are :"<<cv<<" "<<cv2<<"\n";
+            
     }
+
     }
   }
 
