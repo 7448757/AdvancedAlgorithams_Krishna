@@ -5,6 +5,7 @@ using namespace std;
 int main() 
 { 
     int totalinputs,targetvalue,consideredvalue[2];
+  { 
    cout<<"Enter total inputs:";
   cin>>totalinputs;
   cout<<"total inputs are :"<<totalinputs<<"\n";
