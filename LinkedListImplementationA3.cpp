@@ -52,13 +52,27 @@ while(pointer!=NULL){
 
 int main()
 { 
-     // predefined 4x5 sparse matrix
-    int sparseMatrix[4][5] = { { 0 , 0 , 3 , 0 , 4 }, { 0 , 0 , 5 , 7 , 0 },{ 0 , 0 , 0 , 0 , 0 },{ 0 , 2 , 6 , 0 , 0 } };
-     
+    //User custom input array
+    int rowsize,colsize;
+    cout<<"Enter row size of array: ";
+    cin>>rowsize;
+    cout<<"Enter colsize of array: ";
+    cin>>colsize;
+    int sparseMatrix[rowsize][colsize];
+    for(int i =0;i<rowsize;i++){
+        for (int j=0;j<colsize;j++){
+            cout<<"Enter array of "<<i<<" "<<j<<" value: ";
+            cin>>sparseMatrix[i][j];
+        }
+    }
+
+      // predefined sparse matrix
+   // int sparseMatrix[2][2] = { { 0 , 0  }, {  5 , 7 } };
+
     // Creating head/first node of list as NULL
     Node *head = NULL;
-    for(int i = 0; i < 4; i++)
-    {        for(int j = 0; j < 5; j++)
+    for(int i = 0; i < rowsize; i++)
+    {        for(int j = 0; j < colsize; j++)
      {
      if (sparseMatrix[i][j] != 0)//For sparse matrix we only consider non zero elements
       createNewNode(&head, i, j,sparseMatrix[i][j]);
