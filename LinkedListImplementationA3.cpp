@@ -21,7 +21,7 @@ if(temporary==NULL){
     temporary= new Node(); //creating a first new node in list
     temporary->row=rowval;
     temporary->col=colval;
-    temporary->value=dat;
+    temporary->value=dat; 
     temporary->nextaddr=NULL;
     *p=temporary; //assigning temporary values to first header address
 }
