@@ -8,7 +8,7 @@ class Node{ //This is a node class to represent linked list
     int row;
     int col;
     int value;
-    Node *nextaddr; //Constructer same as class name
+    Node *nextaddr; //Stores next node address.Constructer same as class name
 };
 
 void createNewNode(Node **p,int rowval,int colval,int dat){ //This is a function to create a new node
@@ -64,7 +64,7 @@ int main()
       createNewNode(&head, i, j,sparseMatrix[i][j]);
         }
     }
-    printlinkedlist(head);
+    printlinkedlist(head);//Printing the linked list using this method
  
     return 0;
 }
