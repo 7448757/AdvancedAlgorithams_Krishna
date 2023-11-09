@@ -52,7 +52,7 @@ while(pointer!=NULL){
 
 int main()
 { 
-     // 4x5 sparse matrix 
+     // predefined 4x5 sparse matrix
     int sparseMatrix[4][5] = { { 0 , 0 , 3 , 0 , 4 }, { 0 , 0 , 5 , 7 , 0 },{ 0 , 0 , 0 , 0 , 0 },{ 0 , 2 , 6 , 0 , 0 } };
      
     // Creating head/first node of list as NULL
