@@ -60,9 +60,16 @@ cin>>str2;
 
     string Lc=result.second; // result.second here holds the Longest common substring
 
-    // Print one of the longest common substrings (in case of a tie)
-    cout << "Longest Common Substring: " << Lc << endl;
-    cout<<"Length of Longest common Substring: "<< Lc.size()<<endl;
+// Print one of the longest common substrings (in case of a tie)
+if(Lc.empty()){
+
+    cout << "There's No Longest Common Substring"<< endl;
+    }else{ 
+        cout << "Longest Common Substring: " << Lc << endl;
+        cout<<"Length of Longest common Substring: "<< Lc.size()<<endl;
+    
+    }
+    
 
     return 0;
 }
